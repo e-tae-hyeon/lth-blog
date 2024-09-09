@@ -13,6 +13,19 @@ const config: Config = {
         text4: "#1212120A",
       },
     },
+    keyframes: {
+      "loop-horizontal": {
+        "0%": {
+          transform: "translateX(0%)",
+        },
+        "100%": {
+          transform: "translateX(-100%)",
+        },
+      },
+    },
+    animation: {
+      loop: "loop-horizontal 10s linear infinite",
+    },
   },
   plugins: [],
 };

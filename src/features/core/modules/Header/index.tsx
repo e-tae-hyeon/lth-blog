@@ -8,7 +8,7 @@ function Header() {
   const today = DateUtil.now().format("MMM D");
 
   return (
-    <header className="flex justify-center items-center gap-[12px] p-[20px]">
+    <header className="sticky top-0 flex justify-center items-center gap-[12px] p-[20px]">
       <div className="flex items-center justify-center gap-[14px] px-6 py-3 bg-text4 rounded-full">
         <Link href={"/"}>
           <Logo />

@@ -5,7 +5,7 @@ import React from "react";
 
 function AboutPage() {
   return (
-    <main className="mx-auto max-w-[1024px] p-5">
+    <main className="page">
       <section className="flex flex-col gap-10 p-5 text-center">
         <h1 className="title">I'm {NICKNAME}</h1>
 

@@ -1,5 +1,5 @@
-export const NICKNAME = "KENZI";
+export const NICKNAME = "Lee Tae-Hyeon";
 
 export const URI_GITHUB = "https://github.com/e-tae-hyeon";
 
-export const EMAIL = "johtta888@naver.com";
+export const EMAIL = "lthxd0729@gmail.com";

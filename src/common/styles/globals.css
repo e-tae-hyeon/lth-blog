@@ -38,4 +38,8 @@
   .caption {
     @apply font-medium text-xs text-text100;
   }
+
+  .page {
+    @apply mx-auto max-w-5xl p-5;
+  }
 }

@@ -1,5 +1,11 @@
 import WorkInProgress from "@/components/WorkInProgress";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Posts - lth.XD",
+  description: "posts written by Lee Tae-Hyeon",
+};
 
 function PostPage() {
   return (

@@ -1,7 +1,13 @@
 import { NICKNAME } from "@/common/constant";
 import CareerRecords from "@/features/about/modules/CareerRecords";
 import Contacts from "@/features/about/modules/Contacts";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About - lth.XD",
+  description: "about Lee Tae-Hyeon",
+};
 
 function AboutPage() {
   return (

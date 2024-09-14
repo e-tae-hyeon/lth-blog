@@ -1,5 +1,11 @@
 import ProjectGrid from "@/features/project/modules/ProjectGrid";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Projects - lth.XD",
+  description: "projects developed by Lee Tae-Hyeon",
+};
 
 function ProjectPage() {
   return (

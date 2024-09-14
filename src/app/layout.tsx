@@ -21,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`${pretendard.className} antialiased`}>
         <Header />
         {children}

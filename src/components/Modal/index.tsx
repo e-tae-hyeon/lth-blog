@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { createPortal } from "react-dom";
@@ -24,7 +26,10 @@ function Modal({
 
   const className = positionClassMap[position];
 
-  const portal = document.getElementById("portal");
+  const portal =
+    typeof window !== "undefined"
+      ? document.getElementById("portal")
+      : undefined;
 
   if (!portal) return <></>;
 

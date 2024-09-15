@@ -20,4 +20,6 @@ const theme: BaseTheme = {
   text4: "#1212120A",
 };
 
+export const MOBILE_RESPONSIVE_SIZE = 524;
+
 export default theme;

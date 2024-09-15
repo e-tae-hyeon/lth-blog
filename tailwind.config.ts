@@ -4,6 +4,9 @@ const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      screens: {
+        mobile: "524px",
+      },
       colors: {
         text100: "#121212",
         text80: "#121212CC",

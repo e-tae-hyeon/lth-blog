@@ -58,7 +58,7 @@ function Navigator() {
       {navOptions.map(({ label, to }, idx) => (
         <>
           <Link
-            href={"/about"}
+            href={to}
             className="h4 text-text80 px-4 py-1 rounded-md hover:bg-neutral-200 duration-200"
             key={to}
           >

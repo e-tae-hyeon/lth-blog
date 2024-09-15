@@ -28,7 +28,7 @@ function StoreLinker({ store, link }: StoreLinkerProps) {
       className="flex items-center justify-center gap-1 py-1 px-2 rounded bg-text4"
     >
       <Icon name={icon} size={20} />
-      <span className="label">{label}</span>
+      <span className="label hidden mobile:block">{label}</span>
     </a>
   );
 }

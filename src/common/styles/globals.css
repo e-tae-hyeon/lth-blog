@@ -42,4 +42,8 @@
   .page {
     @apply mx-auto max-w-5xl p-5;
   }
+
+  .section {
+    @apply mx-auto max-w-3xl p-2 w-full;
+  }
 }

@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 
 function ProjectPage() {
   return (
-    <main className="page">
-      <section className="p-5">
+    <main className="page flex flex-col gap-5">
+      <section className="p-2">
         <h1 className="title text-center">Projects</h1>
       </section>
 
-      <section className="p-5">
+      <section className="section">
         <ProjectGrid />
       </section>
     </main>

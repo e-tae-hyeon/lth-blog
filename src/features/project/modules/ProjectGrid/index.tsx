@@ -9,7 +9,7 @@ async function ProjectGrid() {
   const projects = data ?? [];
 
   return (
-    <div className="grid md:grid-cols-2 gap-5">
+    <div className="grid mobile:grid-cols-2 gap-5">
       {projects.map((project) => {
         const { id, logo_uri, name, desc, web_uri, ios_uri, aos_uri } = project;
 

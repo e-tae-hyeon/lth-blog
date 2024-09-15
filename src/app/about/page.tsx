@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 function AboutPage() {
   return (
     <main className="page">
-      <section className="flex flex-col gap-10 p-5 text-center">
+      <section className="flex flex-col gap-10 p-2 text-center">
         <h1 className="title">I'm {NICKNAME}</h1>
 
         <div className="flex flex-col gap-5">
@@ -26,11 +26,11 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="p-5">
+      <section className="p-2">
         <Contacts />
       </section>
 
-      <section>
+      <section className="section">
         <CareerRecords />
       </section>
     </main>

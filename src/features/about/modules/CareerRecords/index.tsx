@@ -8,7 +8,7 @@ function CareerRecords() {
   const sorted = careers.sort((a, b) => b.year - a.year);
 
   return (
-    <div className="mx-auto max-w-3xl grid md:grid-cols-2 p-5">
+    <div className="grid mobile:grid-cols-2 p-2">
       {sorted.map(({ content, year }, idx) => (
         <div
           className="flex-1 flex flex-col gap-1 p-2 rounded hover:bg-text4 duration-150"

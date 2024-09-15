@@ -8,35 +8,35 @@
   }
 
   .h1 {
-    @apply font-bold text-2xl text-text100;
+    @apply font-semibold text-2xl text-text100;
   }
 
   .h2 {
-    @apply font-bold text-xl text-text100;
+    @apply font-semibold text-xl text-text100;
   }
 
   .h3 {
-    @apply font-bold text-lg text-text100;
+    @apply font-semibold text-lg text-text100;
   }
 
   .h4 {
-    @apply font-bold text-base text-text100;
+    @apply font-semibold text-base text-text100;
   }
 
   .label {
-    @apply font-bold text-sm text-text100;
+    @apply font-semibold text-sm text-text100;
   }
 
   .b1 {
-    @apply font-medium text-base text-text100;
+    @apply font-normal text-base text-text100;
   }
 
   .b2 {
-    @apply font-medium text-sm text-text100;
+    @apply font-normal text-sm text-text100;
   }
 
   .caption {
-    @apply font-medium text-xs text-text100;
+    @apply font-light text-xs text-text100;
   }
 
   .page {

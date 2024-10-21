@@ -1,0 +1,26 @@
+import ProjectList from "@/features/project/modules/ProjectList";
+import { Metadata } from "next";
+import React, { Suspense } from "react";
+
+export const metadata: Metadata = {
+  title: "Projects - lth.XD",
+  description: "projects developed by Lee Tae-Hyeon",
+};
+
+function ProjectsPage() {
+  return (
+    <div className="page flex flex-col gap-[40px]">
+      <header>
+        <h1 className="title p-[20px]">Projects</h1>
+      </header>
+
+      <section className="p-[20px]">
+        <Suspense>
+          <ProjectList />
+        </Suspense>
+      </section>
+    </div>
+  );
+}
+
+export default ProjectsPage;

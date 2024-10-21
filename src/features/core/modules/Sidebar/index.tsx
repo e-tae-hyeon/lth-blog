@@ -9,7 +9,7 @@ function Sidebar() {
   const today = DateUtil.now().format("MMM D");
 
   return (
-    <div className="fixed top-0 bottom-0 left-0 w-[240px] h-screen">
+    <div className="fixed top-0 bottom-0 left-0 w-[240px] h-screen z-50">
       <nav className="w-full h-full flex flex-col gap-[24px] bg-gray-50 p-5 border-r">
         <header className="flex items-center gap-2">
           <Logo />

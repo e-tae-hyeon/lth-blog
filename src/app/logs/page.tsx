@@ -1,12 +1,10 @@
-import { NICKNAME } from "@/common/constant";
 import WorkInProgress from "@/components/WorkInProgress";
-import CareerRecords from "@/features/about/modules/CareerRecords";
 import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
   title: "Logs - lth.XD",
-  description: "about Lee Tae-Hyeon",
+  description: "logs Lee Tae-Hyeon",
 };
 
 function LogsPage() {

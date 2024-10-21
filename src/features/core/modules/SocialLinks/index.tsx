@@ -1,0 +1,21 @@
+import { IconName } from "@/components/Icon";
+import React from "react";
+import SocialLinkItem from "../SocialLinkItem";
+import { EMAIL, URI_GITHUB } from "@/common/constant";
+
+function SocialLinks() {
+  const links: { icon: IconName; label: string; url: string }[] = [
+    { icon: "mail", label: "Email", url: `mailto:${EMAIL}?subject=&body=` },
+    { icon: "github", label: "GitHub", url: URI_GITHUB },
+  ];
+
+  return (
+    <div className="flex flex-col gap-2">
+      {links.map(({ icon, label, url }) => (
+        <SocialLinkItem icon={icon} label={label} url={url} key={url} />
+      ))}
+    </div>
+  );
+}
+
+export default SocialLinks;

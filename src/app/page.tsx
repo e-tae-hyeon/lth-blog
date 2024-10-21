@@ -9,7 +9,7 @@ function HomePage() {
         <Clock />
       </div>
 
-      <TimeFlow />
+      {/* <TimeFlow /> */}
     </main>
   );
 }

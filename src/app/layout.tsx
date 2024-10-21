@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/common/styles/globals.css";
-import Header from "@/features/core/modules/Header";
+import Sidebar from "@/features/core/modules/Sidebar";
 
 const pretendard = localFont({
   src: "../../public/fonts/PretendardVariable.woff2",
@@ -25,11 +25,14 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
+
       <body className={`${pretendard.className}`}>
-        <Header />
-        {children}
+        <div className="flex pl-[240px]">
+          <Sidebar />
+          <div>{children}</div>
+        </div>
+        <div id="portal" />
       </body>
-      <div id="portal" />
     </html>
   );
 }

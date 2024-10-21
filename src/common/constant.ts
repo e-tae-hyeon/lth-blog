@@ -1,4 +1,4 @@
-export const NICKNAME = "Lee Tae-Hyeon";
+export const NICKNAME = "이태현";
 
 export const URI_GITHUB = "https://github.com/e-tae-hyeon";
 

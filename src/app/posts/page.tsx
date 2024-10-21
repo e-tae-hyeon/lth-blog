@@ -7,18 +7,18 @@ export const metadata: Metadata = {
   description: "posts written by Lee Tae-Hyeon",
 };
 
-function PostPage() {
+function PostsPage() {
   return (
-    <main className="page">
-      <section className="p-5">
-        <h1 className="title text-center">Posts</h1>
-      </section>
+    <div className="page flex flex-col gap-[40px]">
+      {/* <header className="p-[20px]">
+        <h1 className="title">Posts</h1>
+      </header> */}
 
       <div>
         <WorkInProgress />
       </div>
-    </main>
+    </div>
   );
 }
 
-export default PostPage;
+export default PostsPage;

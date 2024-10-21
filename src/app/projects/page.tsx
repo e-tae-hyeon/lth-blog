@@ -1,6 +1,7 @@
+import AsyncBoundary from "@/features/core/modules/AsyncBoundary";
 import ProjectList from "@/features/project/modules/ProjectList";
 import { Metadata } from "next";
-import React, { Suspense } from "react";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Projects - lth.XD",
@@ -15,9 +16,9 @@ function ProjectsPage() {
       </header>
 
       <section className="p-[20px]">
-        <Suspense>
+        <AsyncBoundary>
           <ProjectList />
-        </Suspense>
+        </AsyncBoundary>
       </section>
     </div>
   );

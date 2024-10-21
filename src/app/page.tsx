@@ -4,13 +4,12 @@ import React from "react";
 
 function HomePage() {
   return (
-    <main className="pt-[20vh]">
-      <div className="py-[20px]">
+    <div className="flex flex-col">
+      <section className="flex flex-col gap-[20px] pt-[32vh]">
         <Clock />
-      </div>
-
-      {/* <TimeFlow /> */}
-    </main>
+        <TimeFlow />
+      </section>
+    </div>
   );
 }
 

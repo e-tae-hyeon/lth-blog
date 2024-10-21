@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={`${pretendard.className}`}>
         <div className="flex pl-[240px]">
           <Sidebar />
-          <div>{children}</div>
+          <div className="w-full min-h-screen">{children}</div>
         </div>
         <div id="portal" />
       </body>

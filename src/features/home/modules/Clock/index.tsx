@@ -17,7 +17,7 @@ function Clock() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center gap-[10px] p-[10px] h4">
+    <div className="flex flex-col justify-center items-center gap-[8px] p-[10px] h4">
       <h1>{WISE}</h1>
       <div suppressHydrationWarning> {now} GMT+9</div>
     </div>

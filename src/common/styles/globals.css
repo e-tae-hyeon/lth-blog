@@ -40,10 +40,6 @@
   }
 
   .page {
-    @apply mx-auto max-w-5xl p-5;
-  }
-
-  .section {
-    @apply mx-auto max-w-3xl p-2 w-full;
+    @apply p-[20px] lg:mx-[120px] lg:pt-[40px] max-w-[1240px] mx-auto;
   }
 }

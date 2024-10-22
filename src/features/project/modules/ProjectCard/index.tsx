@@ -22,8 +22,8 @@ function ProjectCard({ logoUri, name, desc, links }: ProjectCardProps) {
     .filter((store) => store.link) as Array<{ store: Store; link: string }>;
 
   return (
-    <div className="flex flex-col gap-4">
-      <section className="flex items-center gap-3">
+    <article className="flex flex-col gap-4">
+      <section className="flex flex-col md:flex-row md:items-center gap-[12px]">
         <div className="aspect-square w-[60px] mobile:w-[80px] relative rounded-lg border overflow-hidden border-neutral-200">
           <Image src={logoUri} alt={`${name} logo`} fill className="absolute" />
         </div>
@@ -43,7 +43,7 @@ function ProjectCard({ logoUri, name, desc, links }: ProjectCardProps) {
           />
         ))}
       </div>
-    </div>
+    </article>
   );
 }
 

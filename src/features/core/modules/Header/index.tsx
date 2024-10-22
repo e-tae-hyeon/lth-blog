@@ -1,22 +1,22 @@
+"use client";
+
+import Icon from "@/components/Icon";
 import React from "react";
-import Navigator from "../Navigator";
-import Logo from "@/components/Logo";
-import Link from "next/link";
-import DateUtil from "@/utils/DateUtil";
+import useCoreStore from "../stores/useCoreStore";
 
 function Header() {
-  const today = DateUtil.now().format("MMM D");
+  const { openSidebar } = useCoreStore();
 
   return (
-    <header className="sticky top-0 flex justify-center items-center gap-[12px] p-[20px]">
-      <div className="flex items-center justify-center gap-[14px] px-6 py-3 bg-text4 rounded-full">
-        <Link href={"/"}>
-          <Logo />
-        </Link>
-        <span className="h4">{today}</span>
-      </div>
+    <header className="flex items-center justify-between p-[16px] ">
+      <button
+        onClick={openSidebar}
+        className="visible md:invisible hover:-translate-y-1 duration-150"
+      >
+        <Icon name="sidebar" />
+      </button>
 
-      <Navigator />
+      <div className="label">by LTH</div>
     </header>
   );
 }

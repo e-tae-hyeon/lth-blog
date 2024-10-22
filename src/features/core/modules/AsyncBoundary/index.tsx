@@ -1,11 +1,11 @@
 "use client";
 
 import React, { Suspense } from "react";
-import { ErrorBoundary, FallbackProps } from "react-error-boundary";
+import { ErrorBoundary } from "react-error-boundary";
 
-type Props = React.PropsWithChildren<{}>;
+type Props = React.PropsWithChildren;
 
-function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
+function ErrorFallback() {
   return (
     <section className="flex justify-center items-center p-[20px] h4">
       <h1>에러가 발생했어요... 나중에 방문해주세요</h1>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/common/styles/globals.css";
 import Sidebar from "@/features/core/modules/Sidebar";
+import Header from "@/features/core/modules/Header";
 
 const pretendard = localFont({
   src: "../../public/fonts/PretendardVariable.woff2",
@@ -27,9 +28,12 @@ export default function RootLayout({
       </head>
 
       <body className={`${pretendard.className}`}>
-        <div className="flex pl-[240px]">
+        <div className="flex md:pl-[240px]">
           <Sidebar />
-          <div className="w-full min-h-screen">{children}</div>
+          <div className="w-full min-h-screen">
+            <Header />
+            {children}
+          </div>
         </div>
         <div id="portal" />
       </body>

@@ -40,6 +40,6 @@
   }
 
   .page {
-    @apply pt-[80px] px-[240px] p-5;
+    @apply p-[20px] lg:mx-[120px] lg:pt-[40px] max-w-[1240px] mx-auto;
   }
 }

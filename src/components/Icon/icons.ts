@@ -5,3 +5,4 @@ export { default as googlePlay } from "@icons/google-play.svg";
 export { default as world } from "@icons/world.svg";
 export { default as arrowRight } from "@icons/arrow-right.svg";
 export { default as arrowUpRight } from "@icons/arrow-up-right.svg";
+export { default as sidebar } from "@icons/sidebar.svg";

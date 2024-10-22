@@ -4,12 +4,15 @@ import { createClient } from "@/utils/supabase/server";
 
 async function ProjectList() {
   const client = createClient();
-  const { data } = await client.from("Project").select("*");
+  const { data } = await client
+    .from("Project")
+    .select("*")
+    .order("id", { ascending: false });
 
   const projects = data ?? [];
 
   return (
-    <div className="flex flex-col gap-[16px]">
+    <div className="flex flex-col gap-[40px]">
       {projects.map((project) => {
         const { id, logo_uri, name, desc, web_uri, ios_uri, aos_uri } = project;
 

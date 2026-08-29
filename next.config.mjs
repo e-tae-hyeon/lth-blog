@@ -27,9 +27,6 @@ const nextConfig = {
 
     return config;
   },
-  images: {
-    remotePatterns: [{ hostname: "uttrtriznolxeompqndm.supabase.co" }],
-  },
 };
 
 export default nextConfig;

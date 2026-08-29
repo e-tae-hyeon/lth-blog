@@ -3,9 +3,7 @@ import NavItem from "../NavItem";
 
 function Navigator() {
   const navOptions: { label: string; url: string }[] = [
-    { label: "Projects", url: "/projects" },
     { label: "Posts", url: "/posts" },
-    { label: "Logs", url: "/logs" },
   ];
 
   return (

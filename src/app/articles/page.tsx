@@ -3,17 +3,13 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Posts - lth.XD",
-  description: "posts written by Lee Tae-Hyeon",
+  title: "Articles - lth.XD",
+  description: "articles written by Lee Tae-Hyeon",
 };
 
-function PostsPage() {
+function ArticlesPage() {
   return (
     <div className="page flex flex-col gap-[40px]">
-      {/* <header className="p-[20px]">
-        <h1 className="title">Posts</h1>
-      </header> */}
-
       <div>
         <WorkInProgress />
       </div>
@@ -21,4 +17,4 @@ function PostsPage() {
   );
 }
 
-export default PostsPage;
+export default ArticlesPage;

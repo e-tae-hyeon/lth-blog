@@ -6,6 +6,7 @@ import NavItem from "../NavItem";
 
 const NAV_OPTIONS: { label: string; url: string }[] = [
   { label: "taehyeon lee", url: "/" },
+  { label: "articles", url: "/articles" },
   { label: "about", url: "/about" },
 ];
 

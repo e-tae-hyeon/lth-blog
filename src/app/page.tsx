@@ -4,9 +4,11 @@ import React from "react";
 
 function HomePage() {
   return (
-    <div className="flex-1 flex flex-col items-center justify-center gap-[48px] px-[20px] py-[80px]">
-      <Intro />
-      <Career />
+    <div className="flex-1 flex flex-col justify-center px-[20px] py-[80px]">
+      <div className="w-full max-w-[560px] mx-auto flex flex-col gap-[48px]">
+        <Intro />
+        <Career />
+      </div>
     </div>
   );
 }

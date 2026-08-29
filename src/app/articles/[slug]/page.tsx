@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return {};
 
   return {
-    title: `${article.meta.title} - lth.XD`,
+    title: `${article.meta.title} - taehyeon lee`,
     description: article.meta.description,
   };
 }

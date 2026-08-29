@@ -12,8 +12,8 @@ const pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "lth.XD",
-  description: "Lee Tae-Hyeon blog",
+  title: "taehyeon lee",
+  description: "이태현의 블로그",
 };
 
 export default function RootLayout({

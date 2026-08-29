@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Articles - lth.XD",
+  title: "Articles - taehyeon lee",
   description: "articles written by Lee Tae-Hyeon",
 };
 

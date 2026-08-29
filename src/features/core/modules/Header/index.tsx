@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur">
-      <nav className="max-w-[560px] w-full mx-auto flex items-center h-[56px] px-[20px]">
+      <nav className="w-full max-w-[720px] mx-auto flex items-center h-[56px] px-[20px]">
         <div className="flex items-center gap-[4px] -ml-[10px]">
           {NAV_OPTIONS.map(({ label, url }) => (
             <NavItem

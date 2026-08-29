@@ -27,7 +27,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
 
-      <body className={`${pretendard.className}`}>
+      <body className={`${pretendard.className} tracking-[-0.01em]`}>
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-1 flex flex-col">{children}</main>

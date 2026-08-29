@@ -4,7 +4,7 @@
 
 @layer components {
   .title {
-    @apply font-bold text-4xl text-text100;
+    @apply font-medium text-[32px] leading-[1.2] tracking-[-0.02em] text-text100;
   }
 
   .h1 {
@@ -28,7 +28,7 @@
   }
 
   .b1 {
-    @apply font-normal text-base text-text100;
+    @apply font-normal text-[17px] leading-[1.8] tracking-[-0.01em] text-text100;
   }
 
   .b2 {
@@ -41,5 +41,47 @@
 
   .page {
     @apply p-[20px] lg:mx-[120px] lg:pt-[40px] max-w-[1240px] mx-auto;
+  }
+}
+
+@layer components {
+  .article {
+    @apply font-normal text-[17px] leading-[1.8] tracking-[-0.01em] text-text100;
+  }
+
+  .article h1 {
+    @apply font-medium text-[32px] leading-[1.2] tracking-[-0.02em] mb-[24px];
+  }
+
+  .article h2 {
+    @apply font-bold text-[24px] leading-[1.3] tracking-[-0.02em] mt-[56px] mb-[16px];
+  }
+
+  .article h3 {
+    @apply font-bold text-[22px] leading-[1.2] tracking-[-0.017em] mt-[56px] mb-[12px];
+  }
+
+  .article p {
+    @apply mb-[24px];
+  }
+
+  .article strong {
+    @apply font-bold;
+  }
+
+  .article a {
+    @apply underline underline-offset-[3px];
+  }
+
+  .article ul {
+    @apply list-disc pl-[20px] mb-[24px];
+  }
+
+  .article ol {
+    @apply list-decimal pl-[20px] mb-[24px];
+  }
+
+  .article li {
+    @apply mb-[6px];
   }
 }

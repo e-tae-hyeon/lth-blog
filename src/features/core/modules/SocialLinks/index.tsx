@@ -11,7 +11,7 @@ function SocialLinks() {
   ];
 
   return (
-    <div className="flex flex-wrap items-center gap-[4px] -ml-[8px]">
+    <div className="flex flex-wrap items-center justify-center gap-[4px]">
       {links.map(({ icon, label, url }) => (
         <SocialLinkItem icon={icon} label={label} url={url} key={url} />
       ))}

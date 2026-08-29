@@ -14,7 +14,7 @@ function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur">
       <nav className="max-w-[1240px] mx-auto flex items-center gap-[4px] h-[56px] px-[20px]">
         {NAV_OPTIONS.map(({ label, url }) => (
           <NavItem

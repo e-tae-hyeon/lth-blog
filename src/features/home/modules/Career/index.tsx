@@ -1,6 +1,9 @@
 import React from "react";
 
-const RECORDS: string[] = ["Viva Republica (Toss)", "University of Seoul"];
+const RECORDS: string[] = [
+  "Viva Republica (Toss), Frontend Developer",
+  "University of Seoul, Electrical and Computer Engineering",
+];
 
 function Career() {
   return (

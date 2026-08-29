@@ -1,4 +1,4 @@
-import WorkInProgress from "@/components/WorkInProgress";
+import ArticleList from "@/features/article/modules/ArticleList";
 import { Metadata } from "next";
 import React from "react";
 
@@ -9,10 +9,8 @@ export const metadata: Metadata = {
 
 function ArticlesPage() {
   return (
-    <div className="page flex flex-col gap-[40px]">
-      <div>
-        <WorkInProgress />
-      </div>
+    <div className="w-full max-w-[720px] mx-auto px-[20px] py-[60px]">
+      <ArticleList />
     </div>
   );
 }

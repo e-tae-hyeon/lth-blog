@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "dayjs": "^1.11.13",
+    "gray-matter": "^4.0.3",
     "next": "^16.3.3",
+    "next-mdx-remote": "^6.0.0",
     "react": "^19",
     "react-dom": "^19",
     "react-error-boundary": "^4.1.2",
+    "remark-gfm": "^4.0.1",
     "zustand": "^5.0.0"
   },
   "devDependencies": {

@@ -84,4 +84,37 @@
   .article li {
     @apply mb-[6px];
   }
+
+  .article blockquote {
+    @apply border-l-2 border-text20 pl-[16px] text-text60 mb-[24px];
+  }
+
+  .article code {
+    @apply rounded-[4px] bg-text4 px-[5px] py-[2px] text-[15px];
+  }
+
+  .article pre {
+    @apply overflow-x-auto rounded-[8px] bg-text100 p-[16px] mb-[24px];
+  }
+
+  .article pre code {
+    @apply bg-transparent p-0 text-[14px] leading-[1.7] text-white;
+  }
+
+  .article img {
+    @apply rounded-[8px] mb-[24px];
+  }
+
+  .article hr {
+    @apply border-text20 my-[40px];
+  }
+
+  .article table {
+    @apply w-full text-left mb-[24px];
+  }
+
+  .article th,
+  .article td {
+    @apply border-b border-text20 py-[8px] pr-[16px];
+  }
 }

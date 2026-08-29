@@ -20,7 +20,7 @@ function Header() {
             <NavItem
               label={label}
               url={url}
-              isActive={pathname === url}
+              isActive={url === "/" ? pathname === url : pathname.startsWith(url)}
               key={url}
             />
           ))}

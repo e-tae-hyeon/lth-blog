@@ -5,7 +5,7 @@ const KEYWORDS = ["frontend", "growth", "problem framing", "builder"];
 
 function Intro() {
   return (
-    <section className="flex flex-col gap-[10px]">
+    <section className="flex flex-col items-center gap-[10px] text-center">
       <h1 className="title">
         taehyeon lee <span className="text-text40">({NICKNAME})</span>
       </h1>

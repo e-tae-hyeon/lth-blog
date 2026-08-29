@@ -8,20 +8,20 @@ type Props = {
 };
 
 function ArticleCard({ article }: Props) {
-  const { slug, title, date, description } = article;
+  const { slug, title, date } = article;
 
   return (
     <Link
       href={`/articles/${slug}`}
-      className="flex flex-col gap-[4px] rounded-[6px] -mx-[10px] px-[10px] py-[10px] duration-150 hover:bg-gray-100"
+      className="flex flex-wrap items-baseline gap-x-[12px] gap-y-[2px] w-fit"
     >
-      <h2 className="h2">{title}</h2>
-
-      {description && <p className="b1 text-text60">{description}</p>}
+      <span className="text-[15px] font-medium leading-[1.45] text-text100 hover:underline underline-offset-[3px]">
+        {title}
+      </span>
 
       {date && (
-        <time className="b2 text-text40" dateTime={date}>
-          {DateUtil.format(date)}
+        <time className="text-[13px] font-normal leading-[1.45] text-text60" dateTime={date}>
+          {DateUtil.formatDisplay(date)}
         </time>
       )}
     </Link>

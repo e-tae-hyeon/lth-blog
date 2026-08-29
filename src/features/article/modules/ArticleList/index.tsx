@@ -9,7 +9,7 @@ function ArticleList() {
     return <p className="b1 text-text60">아직 작성한 글이 없어요.</p>;
 
   return (
-    <div className="flex flex-col gap-[28px]">
+    <div className="flex flex-col gap-[8px]">
       {articles.map((article) => (
         <ArticleCard article={article} key={article.slug} />
       ))}

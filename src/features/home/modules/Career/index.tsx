@@ -1,18 +1,14 @@
 import React from "react";
 
-const RECORDS: { name: string; period: string }[] = [
-  { name: "Viva Republica (Toss)", period: "2025.08 -" },
-  { name: "University of Seoul", period: "2019.03 -" },
-];
+const RECORDS: string[] = ["Viva Republica (Toss)", "University of Seoul"];
 
 function Career() {
   return (
-    <section className="grid grid-cols-[max-content_auto] gap-x-[20px] gap-y-[8px]">
-      {RECORDS.map(({ name, period }) => (
-        <React.Fragment key={name}>
-          <span className="b1">{name}</span>
-          <span className="b1 text-text60">{period}</span>
-        </React.Fragment>
+    <section className="flex flex-col gap-[6px]">
+      {RECORDS.map((record) => (
+        <span className="b1" key={record}>
+          {record}
+        </span>
       ))}
     </section>
   );

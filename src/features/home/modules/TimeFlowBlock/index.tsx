@@ -19,7 +19,7 @@ function TimeFlowBlock() {
     <div className="flex animate-loop">
       {flows.map((flow, idx) => (
         <div
-          className="flex-shrink-0 aspect-[9/16] w-[19px] rounded-[2px] mr-[10px]"
+          className="flex-shrink-0 aspect-[9/16] w-[14px] rounded-[2px] mr-[6px]"
           style={{ backgroundColor: flow }}
           key={idx}
         />

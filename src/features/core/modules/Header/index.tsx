@@ -3,6 +3,7 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import NavItem from "../NavItem";
+import Clock from "@/features/home/modules/Clock";
 import TimeFlow from "@/features/home/modules/TimeFlow";
 
 const NAV_OPTIONS: { label: string; url: string }[] = [
@@ -25,6 +26,8 @@ function Header() {
           />
         ))}
       </nav>
+
+      <Clock />
 
       <TimeFlow />
     </header>

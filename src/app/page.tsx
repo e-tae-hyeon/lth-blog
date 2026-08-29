@@ -5,7 +5,7 @@ import React from "react";
 function HomePage() {
   return (
     <div className="flex flex-col">
-      <section className="flex flex-col gap-[20px] pt-[32vh]">
+      <section className="flex flex-col gap-[20px] pt-[24vh]">
         <Clock />
         <TimeFlow />
       </section>

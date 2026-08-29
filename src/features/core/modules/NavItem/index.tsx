@@ -4,17 +4,18 @@ import React from "react";
 type Props = {
   url: string;
   label: string;
+  isActive?: boolean;
 };
 
-function NavItem({ url, label }: Props) {
+function NavItem({ url, label, isActive = false }: Props) {
   return (
     <Link
       href={url}
-      className="flex items-center gap-2 rounded-[4px] p-[6px] hover:bg-gray-200 duration-150"
+      className={`label rounded-[4px] px-[10px] py-[6px] duration-150 hover:bg-gray-100 ${
+        isActive ? "text-text100" : "text-text40"
+      }`}
     >
-      <div className="w-1 bg-neutral-950 h-full" />
-
-      <div className="flex items-center gap-1 label">{label}</div>
+      {label}
     </Link>
   );
 }

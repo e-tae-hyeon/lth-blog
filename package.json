@@ -9,7 +9,6 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "@react-hook/window-size": "^3.1.1",
     "dayjs": "^1.11.13",
     "next": "^16.3.3",
     "react": "^19",

@@ -1,7 +1,7 @@
 import React from "react";
 import { NICKNAME } from "@/common/constant";
 
-const KEYWORDS = ["frontend", "growth", "problem framing", "builder"];
+const KEYWORDS = ["growing", "ambitious", "building", "solving problems"];
 
 function Intro() {
   return (
